@@ -7,7 +7,7 @@ export default function SendOtp() {
   const navigate = useNavigate();
 
   const submit = async () => {
-    await axios.post("http://localhost:8000/api/auth/send-otp", { email });
+    await axios.post("https://lms-backend-3z5b.onrender.com/api/auth/send-otp", { email });
     navigate("/verify-otp", { state: { email } });
   };
 
