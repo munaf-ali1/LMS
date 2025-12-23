@@ -8,7 +8,7 @@ export default function ResetPassword() {
   const navigate = useNavigate();
 
   const reset = async () => {
-    await axios.post("http://localhost:8000/api/auth/reset-password", {
+    await axios.post("https://lms-backend-3z5b.onrender.com/api/auth/reset-password", {
       email: state.email,
       password,
     });
