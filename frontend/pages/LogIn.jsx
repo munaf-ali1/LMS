@@ -28,7 +28,7 @@ function Login() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "https://lms-backend-3z5b.onrender.com/api/auth/login",
         formData,
         { withCredentials: true }
       );
