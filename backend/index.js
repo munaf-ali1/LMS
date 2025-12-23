@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://lms-22ne.onrender.com",
     credentials:true
 }))
 
