@@ -8,7 +8,7 @@ export default function VerifyOtp() {
   const navigate = useNavigate();
 
   const verify = async () => {
-    await axios.post("http://localhost:8000/api/auth/verify-otp", {
+    await axios.post("https://lms-backend-3z5b.onrender.com/api/auth/verify-otp", {
       email: state.email,
       otp,
     });
